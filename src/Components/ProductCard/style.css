@@ -33,3 +33,26 @@
   width: 100px;
   height: 30px;
 }
+
+@media(min-width:1200px){
+  .containerProduct{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .containerProduct__picture{
+    width: 100%;
+  }
+
+  .containerProduct__detail{
+    font-size: 20px;
+  }
+
+  .containerProduct__button{
+    width: 125px;
+    height: 48px;
+    font-size: 20px;
+  }
+}

@@ -41,3 +41,29 @@
   background-color: rgb(158, 75, 236);
   color: white;
 }
+
+@media(min-width:1200px){
+  .home__head{
+    width: 100%;
+  }
+
+  .home__image{
+    height: 164px;
+  }
+
+  .home__storeName{
+    font-size: 43px;
+  }
+
+  .home__about{
+    height: 50px;
+    width: 131px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .home__products{
+    padding: 20px;
+  }
+
+}
