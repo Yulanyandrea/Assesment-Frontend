@@ -1,4 +1,3 @@
-![let](https://user-images.githubusercontent.com/79812118/204684808-9b3d3bc8-06be-4719-a3ab-73109dd02434.jpg)
 # Assesment-Frontend
 
 ### ¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
@@ -19,17 +18,22 @@
 
 ### Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
 
--Las variables tipo Var pueden ser tomadas como variables globales en la cual pueden ser modificadas sin ninguna restricción. 
+- Las variables tipo Var pueden ser tomadas como variables globales en la cual pueden ser modificadas sin ninguna restricción. 
 
--Las variables tipo Let tienen el concepto de block scope en la cual solo permite que se pueda acceder dentro del bloque declarado. 
+- Las variables tipo Let tienen el concepto de block scope en la cual solo permite que se pueda acceder dentro del bloque declarado. 
+
+![let](https://user-images.githubusercontent.com/79812118/204684808-9b3d3bc8-06be-4719-a3ab-73109dd02434.jpg)
+
+- Las variables tipo constantes Const son variables que no se pueden modificar  
+
+### ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
+
+- git checkout -b rama-1
+- git switch -C rama-1
+- git branch rama-1
 
 
-
-
-¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
-
-
-Explicar la diferencia entre git merge y git rebase.
+### Explicar la diferencia entre git merge y git rebase.
 
 
 ¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?
