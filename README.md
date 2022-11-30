@@ -52,4 +52,74 @@
 
 ### Dado el siguiente codePen, el cual solo tiene un HTML, por medio de css llegar a esta respuesta.
 
-https://codepen.io/cristian-makeitreal/pen/NWadqqa?editors=1100 
+- https://codepen.io/cristian-makeitreal/pen/NWadqqa?editors=1100 
+
+![picture](https://raw.githubusercontent.com/makeitrealcamp/assesment-1-programa-top/main/assets/services-section.gif))
+
+```
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.c-section{
+  display:flex;
+  flex-direction:column;
+  padding: 47px;
+}
+
+.c-section__title{
+  display:flex;
+  justify-content:center;
+  background-color: black;
+  color: white;
+  border-style: groove;
+  width: 100%;
+  height: 80px;
+  padding: 19px;
+  box-shadow: 5px;
+  border-top: 10px solid #646060;
+}
+
+.c-services{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding-top: 45px;
+}
+
+.c-services__item{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  line-height: 23px;
+  background-color: rgba(229, 222, 222, 0.534);
+  margin: 10px;
+  height: 200px;
+  font-size: 16px;
+}
+
+.c-services__item:hover{
+  box-shadow:    0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.c-services__item h3{
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+
+.c-services__item p{
+  padding-top: 10px;
+  text-align: justify;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+```
