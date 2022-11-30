@@ -35,8 +35,17 @@
 
 ### Explicar la diferencia entre git merge y git rebase.
 
+- git merge: fusiona cualquier cambio que se haya hecho en la rama principal guardando el historial de los commits realizados. Cuando se hace un merge de una rama a otra se junta el historial de ambas ramas lo cual se reará una serie de historiales intercalados 
+
+- git rebase: unifica las ramas dejando un arbol lineal. Tambien El rebase unifica las ramas perdiendo el historial de los commit 
+
 
 ¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?
 
+- Pull request: Es la acción de validar un codigo que se va a fusionar con otra rama 
+- git pull : Trae la copia dela rama principal que se encuentra en la nube y actualiza las ramas locales 
+
 
 ¿Qué es el Virtual DOM?
+
+- "Es  una representación del DOM guardada en memoria que actúa de intermediario entre los estados de la aplicación y los estados del DOM (vistos por el usuario). Cuando ocurre un cambio en la aplicación web, el virtual DOM interpreta dichos cambios y calcula la manera más eficiente de actualizar el DOM para que renderice la menor cantidad de cambios posibles." (información tomada de https://styde.net/que-es-el-virtual-dom-en-react/ )
