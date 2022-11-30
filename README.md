@@ -1,3 +1,4 @@
+![let](https://user-images.githubusercontent.com/79812118/204684808-9b3d3bc8-06be-4719-a3ab-73109dd02434.jpg)
 # Assesment-Frontend
 
 ### ¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
@@ -16,7 +17,13 @@
 - los wireframes son los prototipos de las paginas web, que ayudan a dar una estimación del esquema del producto final. Alli se puede observar la estructura basica y los tipos de contenido que tendra. 
 
 
-Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
+### Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
+
+-Las variables tipo Var pueden ser tomadas como variables globales en la cual pueden ser modificadas sin ninguna restricción. 
+
+-Las variables tipo Let tienen el concepto de block scope en la cual solo permite que se pueda acceder dentro del bloque declarado. 
+
+
 
 
 ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
