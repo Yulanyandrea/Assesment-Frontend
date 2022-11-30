@@ -1,9 +1,19 @@
 # Assesment-Frontend
 
-¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
+### ¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
 
+- Sprint planing.
 
-¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar.
+  -Se realiza al comienzo de cada Sprint y participa el equipo para definir como esta organizado el backlog del producto y como las tareas serán repartidas durante la semana. 
+  
+- Daily Scrum.
+
+  -Es una reunion diaria en la cual su duración es aproximadamente de 15 minutos en la que participa el development team respondiendo las preguntas principales. Que hice ayer, que voy hacer hoy, existe algun impedimento para el sprint goal?
+  
+  
+### ¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar.
+
+- los wireframes son los prototipos de las paginas web, que ayudan a dar una estimación del esquema del producto final. Alli se puede observar la estructura basica y los tipos de contenido que tendra. 
 
 
 Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
