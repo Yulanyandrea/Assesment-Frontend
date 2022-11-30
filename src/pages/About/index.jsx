@@ -38,10 +38,10 @@ const About = () => {
       </section>
       <section className="container__data">
         <p className="container__email"><strong>Correo:</strong> andra_852@hotmail.com</p>
-        <a href="https://www.linkedin.com/in/yulanymunevar/">Linkedin</a>
+        <a href="https://github.com/Yulanyandrea?tab=repositories" target="_blank" rel="noreferrer">Github</a>
       </section>
 
-      {/* Este codigo fue realizado por : https://codingartistweb.com/ */}
+      {/* This code was made by : https://codingartistweb.com/ */}
       <section className="animation">
         <div className="containerCat">
           <div className="kitty">

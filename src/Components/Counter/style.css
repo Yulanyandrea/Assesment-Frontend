@@ -1,0 +1,11 @@
+.counter{
+  font-size: 20px;
+  color: blueviolet;
+  font-weight: 700;
+}
+
+@media(min-width:1200px){
+  .counter{
+    font-size: 30px;
+  }
+}
