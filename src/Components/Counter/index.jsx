@@ -42,7 +42,7 @@ const Counter = () => {
 
   const getDeadTime = () => {
     const deadline = new Date();
-    deadline.setSeconds(deadline.getSeconds() + 60);
+    deadline.setSeconds(deadline.getSeconds() + 240);
     return deadline;
   };
 
