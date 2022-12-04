@@ -38,8 +38,8 @@ const Product = () => {
               </section>
               <section className="containerProduct__option">
                 <Counter />
-                <button type="submit" onClick={handleSubmitbut} disabled={(disable >= 478)} className="containerProduct__button">
-                  {disable >= 478 ? <Link to={`/products/${product.id}`} onClick={(event) => event.preventDefault()}>Go to detail</Link>
+                <button type="submit" onClick={handleSubmitbut} disabled={(disable >= 480)} className="containerProduct__button">
+                  {disable >= 480 ? <Link to={`/products/${product.id}`} onClick={(event) => event.preventDefault()}>Go to detail</Link>
                     : <Link to={`/products/${product.id}`}>Go to detail</Link>}
                 </button>
               </section>
