@@ -23,7 +23,7 @@ const Product = () => {
     };
     callApi();
   }, []);
-  console.log(disable);
+  // console.log(disable);
   const handleSubmitbut = (e) => {
     e.preventDefault();
   };
