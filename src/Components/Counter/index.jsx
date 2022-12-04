@@ -1,5 +1,5 @@
 /* eslint-disable no-mixed-operators */
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const Counter = () => {
   const Ref = useRef(null);
@@ -31,7 +31,7 @@ const Counter = () => {
   };
 
   const clearTimer = (e) => {
-    setTimer('00:05:00');
+    setTimer('00:00:00');
 
     if (Ref.current) clearInterval(Ref.current);
     const id = setInterval(() => {
@@ -42,7 +42,7 @@ const Counter = () => {
 
   const getDeadTime = () => {
     const deadline = new Date();
-    deadline.setSeconds(deadline.getSeconds() + 300);
+    deadline.setSeconds(deadline.getSeconds() + 240);
     return deadline;
   };
 

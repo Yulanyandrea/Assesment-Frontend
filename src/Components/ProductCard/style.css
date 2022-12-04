@@ -27,6 +27,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  color: blueviolet;
+  font-weight: 700;
 }
 
 .containerProduct__button{
