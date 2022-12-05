@@ -13,7 +13,9 @@
   
 ### ¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar.
 
-- los wireframes son los prototipos de las paginas web, que ayudan a dar una estimación del esquema del producto final. Alli se puede observar la estructura basica y los tipos de contenido que tendra. 
+- los wireframes son los prototipos de las paginas web, que ayudan a dar una estimación del esquema del producto final. Alli se puede observar la estructura basica y los tipos de contenido que tendra. La creación de wireframes es una manera eficaz de hacer prototipos rápidos de páginas, mientras que se realiza a la vez una medición de la viabilidad de un concepto de diseño. Dentro del proceso de construcción de un sitio web las ideas se hacen mas tangibles. 
+
+- Herramientas que se pueden utilizar: Balsamic , Canva , MockFlow.
 
 
 ### Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
