@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
 import './style.css';
-import { Link } from 'react-router-dom';
 import Counter from '../Counter/index';
 
 const Product = () => {
   const [products, setProducts] = useState([]);
   // adding useState to control when the button and link going to be off
-  const [disable, setDisable] = useState(0);
+  // const [disable, setDisable] = useState(0);
   // calling api with async funtions
   useEffect(() => {
     const callApi = async () => {
@@ -14,19 +13,16 @@ const Product = () => {
       const data = await api.json();
       console.log(data);
       setProducts(data);
-      const timer = () => {
-        setInterval(() => {
-          setDisable((prevCounter) => prevCounter + 1);
-        }, 1000);
-      };
-      timer();
+      // const timer = () => {
+      //   setInterval(() => {
+      //     setDisable((prevCounter) => prevCounter + 1);
+      //   }, 1000);
+      // };
+      // timer();
     };
     callApi();
   }, []);
   // console.log(disable);
-  const handleSubmitbut = (e) => {
-    e.preventDefault();
-  };
   return (
     <div className="containerProduct">
       {
@@ -38,11 +34,7 @@ const Product = () => {
                 <h2 className="containerProduct__detail">{product.title}</h2>
               </section>
               <section className="containerProduct__option">
-                <Counter />
-                <button type="submit" onClick={handleSubmitbut} disabled={(disable >= 240)} className="containerProduct__button">
-                  {disable >= 240 ? <Link to={`/products/${product.id}`} onClick={(event) => event.preventDefault()}>Go to detail</Link>
-                    : <Link to={`/products/${product.id}`}>Go to detail</Link>}
-                </button>
+                <Counter product={product} />
               </section>
             </section>
           );

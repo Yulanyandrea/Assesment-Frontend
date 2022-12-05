@@ -1,3 +1,8 @@
+.CounterContainer{
+  display: flex;
+  flex-direction: row;
+}
+
 .counter{
   font-size: 20px;
   color: blueviolet;

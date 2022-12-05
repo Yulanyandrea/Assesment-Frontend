@@ -1,7 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-mixed-operators */
 import { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import './style.css';
 
-const Counter = () => {
+const Counter = ({ product }) => {
   const Ref = useRef(null);
 
   // The state for  timer
@@ -42,7 +45,7 @@ const Counter = () => {
 
   const getDeadTime = () => {
     const deadline = new Date();
-    deadline.setSeconds(deadline.getSeconds() + 240);
+    deadline.setSeconds(deadline.getSeconds() + Math.floor(Math.random() * (180 - 60) + 60));
     return deadline;
   };
 
@@ -50,8 +53,18 @@ const Counter = () => {
     clearTimer(getDeadTime());
   }, []);
 
+  const handleSubmitbut = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <div className="counter">{timer}</div>
+    <div className="CounterContainer">
+      <div className="counter">{timer}</div>
+      <button type="submit" onClick={handleSubmitbut} disabled={(timer === '00:00:00')} className="containerProduct__button">
+        {timer === '00:00:00' ? <Link to={`/products/${product.id}`} onClick={(event) => event.preventDefault()}>Go to detail</Link>
+          : <Link to={`/products/${product.id}`}>Go to detail</Link>}
+      </button>
+    </div>
   );
 };
 
