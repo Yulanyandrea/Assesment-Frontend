@@ -4,18 +4,16 @@ import Home from './pages/Home/index';
 import About from './pages/About/index';
 import ProductDetail from './pages/ProductDetails/index';
 
-const App = () => {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products/:id" element={<ProductDetail />} />
+const App = () => (
+  <div className="App">
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/products/:id" element={<ProductDetail />} />
 
-      </Routes>
+    </Routes>
 
-    </div>
-  );
-};
+  </div>
+);
 
 export default App;

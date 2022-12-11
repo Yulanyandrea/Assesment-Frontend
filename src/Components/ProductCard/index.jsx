@@ -4,25 +4,19 @@ import Counter from '../Counter/index';
 
 const Product = () => {
   const [products, setProducts] = useState([]);
-  // adding useState to control when the button and link going to be off
-  // const [disable, setDisable] = useState(0);
-  // calling api with async funtions
   useEffect(() => {
     const callApi = async () => {
-      const api = await fetch('https://fakestoreapi.com/products');
-      const data = await api.json();
-      console.log(data);
-      setProducts(data);
-      // const timer = () => {
-      //   setInterval(() => {
-      //     setDisable((prevCounter) => prevCounter + 1);
-      //   }, 1000);
-      // };
-      // timer();
+      try {
+        const api = await fetch('https://fakestoreapi.com/products');
+        const data = await api.json();
+        console.log(data);
+        setProducts(data);
+      } catch (error) {
+        console.error(error);
+      }
     };
     callApi();
   }, []);
-  // console.log(disable);
   return (
     <div className="containerProduct">
       {

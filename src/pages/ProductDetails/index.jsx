@@ -7,9 +7,13 @@ const ProductDetail = () => {
   const { id } = useParams();
   useEffect(() => {
     const ProductsApi = async () => {
-      const api = await fetch(`https://fakestoreapi.com/products/${id}`);
-      const data = await api.json();
-      setProductDetail(data);
+      try {
+        const api = await fetch(`https://fakestoreapi.com/products/${id}`);
+        const data = await api.json();
+        setProductDetail(data);
+      } catch (error) {
+        console.error(error);
+      }
     };
     ProductsApi();
   }, []);

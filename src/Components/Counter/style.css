@@ -9,6 +9,13 @@
   font-weight: 700;
 }
 
+.button[disabled=disabled], button:disabled {
+ background-color: aliceblue;
+}
+
+.disabled-link {
+  pointer-events: none;
+}
 @media(min-width:1200px){
   .counter{
     font-size: 30px;

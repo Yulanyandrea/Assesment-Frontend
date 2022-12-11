@@ -61,7 +61,7 @@ const Counter = ({ product }) => {
     <div className="CounterContainer">
       <div className="counter">{timer}</div>
       <button type="submit" onClick={handleSubmitbut} disabled={(timer === '00:00:00')} className="containerProduct__button">
-        {timer === '00:00:00' ? <Link to={`/products/${product.id}`} onClick={(event) => event.preventDefault()}>Go to detail</Link>
+        {timer === '00:00:00' ? <Link to={`/products/${product.id}`} className="disabled-link">Go to detail</Link>
           : <Link to={`/products/${product.id}`}>Go to detail</Link>}
       </button>
     </div>
